@@ -2,11 +2,10 @@
 
 import { useEffect } from "react";
 import { useModalStore } from "@/feature/store/useModalStore";
-import BasicModal from "./BasicModal";
+
 import OrderModal from "./OrderModal";
 import SearchModal from "./SearchModal";
 import ReservationModal from "./ReservationModal";
-
 
 const UniversalModal = () => {
   const { isOpen, type, closeModal } = useModalStore();
@@ -56,11 +55,10 @@ const UniversalModal = () => {
         "
       />
 
-      {type === "basic" && <BasicModal />}
       {type === "search" && <SearchModal />}
       {type === "reservation" && <ReservationModal />}
       {type === "order" && <OrderModal />}
-      
+
       {/* later:
         {type === "product" && <ProductModal />}
       */}

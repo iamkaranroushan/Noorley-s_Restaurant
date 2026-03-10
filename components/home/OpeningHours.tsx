@@ -1,9 +1,12 @@
 export default function OpeningHours() {
   const hours = [
-    { day: "Monday - Thursday", time: "11:00 AM – 9:00 PM" },
-    { day: "Friday", time: "11:00 AM – 11:00 PM" },
-    { day: "Saturday", time: "12:00 PM – 11:00 PM" },
-    { day: "Sunday", time: "12:00 PM – 8:00 PM" },
+    { day: "Monday - Thursday", time: "Closed" },
+    { day: "Tuesday", time: "Closed" },
+    { day: "Wednesday", time: "11:00 AM – 6:00 PM" },
+    { day: "Thursday", time: "11:00 AM – 6:00 PM" },
+    { day: "Friday", time: "11:00 AM – 9:00 PM" },
+    { day: "Saturday", time: "11:00 PM – 9:00 PM" },
+    { day: "Sunday", time: "12:00 PM – 6:00 PM" },
   ];
 
   const today = new Date().getDay(); // 0 = Sunday, 1 = Monday ...

@@ -1,6 +1,6 @@
 export default function OpeningHours() {
   const hours = [
-    { day: "Monday - Thursday", time: "Closed" },
+    { day: "Monday", time: "Closed" },
     { day: "Tuesday", time: "Closed" },
     { day: "Wednesday", time: "11:00 AM – 6:00 PM" },
     { day: "Thursday", time: "11:00 AM – 6:00 PM" },
